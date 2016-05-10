@@ -1,0 +1,6 @@
+#submit h1 { 
+	position: relative;
+	font-size: 125%;
+	opacity: .2;
+	color: blue;
+}
