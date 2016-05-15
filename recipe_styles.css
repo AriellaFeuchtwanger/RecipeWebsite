@@ -1,6 +1,51 @@
 #submit h1 { 
 	position: relative;
-	font-size: 125%;
+	font-size: 300%;
 	opacity: .2;
 	color: blue;
+	text-align: center;
+}
+
+#submit img{
+	display:block;
+	margin: 0 auto;
+}
+
+#submit{
+	background:#FDDFDF;
+}
+nav	{
+	width: 235px;
+	float: left;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+nav ul li{
+	display; inline-block;
+}
+nav ul li a:link, nav ul li a:visited, #content h2 {
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	padding: 3px 0 3px 20px;
+	border: solid #929ca4 1px;
+	color: #cc1c0d;
+	text-align: center;
+}
+nav ul li a:link, nav ul li a:visited {
+	display: inline-block;
+	width: 110px;
+	margin-bottom: 15px;
+	text-decoration:none;
+}				
+nav ul li a:hover {
+	display: inline-block;
+	color: #000;
+	background-color: #ccc;
 }

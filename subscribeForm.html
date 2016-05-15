@@ -4,15 +4,18 @@
 		<meta charset="UTF-8">
 		<title>Datepicker</title>
 		<!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
-		<link href="css/smoothness/jquery-ui-1.8.23.custom.css" type="text/css" rel="stylesheet">
+		<link href="css/start/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet">
 		<!-- Normal style sheet used for layout and general formatting. -->
 		<link href="subscribeForm.css" type="text/css" rel="stylesheet">
 		<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
 		<!-- jQuery UI JavaScript library reference. -->
-		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+		
 		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
 		<script>
 			$(document).ready(function() {
@@ -30,63 +33,33 @@
 				// move focus to first text box
 				$("#name").focus();
 
-				$("#request").submit(function(event) {
-					var isValid = true;
+				$("#subscribe_form").validate({
+					rules : {
+						name : {
+							required : true
+						},
+						email : {
+							required : true,
+							email : true
+						},
+						email2 : {
+							required : true,
+							email : true,
+							equalTo : email
+						},
+						number : {
+							rangelength : [1, 10]
+						}
+					},
+					messages:{
+						
+					}
+				});//end validate
 
-					// validate the email entry with a regular expression
-					var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
-					var email = $("#email").val();
-					if (email == "") {
-						$("#email").next().text("This field is required.");
-						isValid = false;
-					} else if (!emailPattern.test(email)) {
-						$("#email_1").next().text("Must be a valid email address.");
-						isValid = false;
-					} else {
-						$("#email_1").next().text("");
-					}
+			} // end function
+			);
+			// end submit
 
-					// validate the second email entry
-					var email2 = $("#email2").val();
-					if (email2 == "") {
-						$("#email2").next().text("This field is required.");
-						isValid = false;
-					} else if (email !== email2) {
-						$("#email2").next().text("Must equal first email entry.");
-						isValid = false;
-					} else {
-						$("#email2").next().text("");
-					}
-
-					// validate the first name entry
-					var usertName = $("#name").val().trim();
-					if (userName == "") {
-						$("#name").next().text("This field is required.");
-						isValid = false;
-					} else {
-						$("#name").val(userName);
-						$("#name").next().text("");
-					}
-
-					// validate the state entry
-					var number = $("number").val();
-					if (number == "") {
-						$("#number").next().text("This field is required.");
-						isValid = false;
-					} else if (number < 0) {
-						$("#number").next().text("Input must be greater than 0.");
-						isValid = false;
-					} else {
-						$("#number").next().text("");
-					}
-					// prevent the default action of submitting the form if any entries are invalid
-					if (isValid == false) {
-						event.preventDefault();
-					}
-				} // end function
-				);
-				// end submit
-			});
 		</script>
 	</head>
 
@@ -111,9 +84,9 @@
 				<br>
 				<label>Number of times you cook/bake in a week:</label>
 				<input type="text" id="number">
-				<br>
+				<br><br>
 				<label>&nbsp;</label>
-				<input type="submit" id="request" name="request" value="Submit Request">
+				<input type="submit" id="join" name="join" value="Join our List">
 			</form>
 		</section>
 	</body>
