@@ -6,40 +6,49 @@
 		<link rel="stylesheet" href="recipe_styles.css">
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-		<script src="index_js.js"></script>
+		<script>
+			$(document).ready(function() {
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
+			});
+		</script>
 	</head>
 
 	<body>
-		<div class ="dessert">
-			<a href="#"><img src = "\images\cupcakes"/></a>
-			<h4>Recipe Title</h4>
-			<p>
-				Recipe information...
-			</p>
-		</div>
-		
-		<div class ="appetizer">
-			<a href="#"><img src = "\images\soup"/></a>
-			<h4>Recipe Title</h4>
-			<p>
-				Recipe information...
-			</p>
-		</div>
-		
-		<div class ="main">
-			<a href="#"><img src = "\images\meat"/></a>
-			<h4>Recipe Title</h4>
-			<p>
-				Recipe information...
-			</p>
-		</div>
-		
-		<div class ="side">
-			<a href="#"><img src = "\images\salad"/></a>
-			<h4>Recipe Title</h4>
-			<p>
-				Recipe information...
-			</p>
-		</div>
+		<div id="nav-placeholder"></div>
+		<section id="food">
+			<div class ="dessert">
+				<a href="#"><img src = "images\cake.jpg"/></a>
+				<h4>Turtle Cake</h4>
+				<p>
+					Recipe information...
+				</p>
+			</div>
+
+			<div class ="appetizer">
+				<a href="#"><img src = "images\soup.jpg"/></a>
+				<h4>Soup</h4>
+				<p>
+					Recipe information...
+				</p>
+			</div>
+
+			<div class ="main">
+				<a href="#"><img src = "images\meat.jpg"/></a>
+				<h4>Slow Cooker Beef Barbacoa</h4>
+				<p>
+					Recipe information...
+				</p>
+			</div>
+
+			<div class ="side">
+				<a href="#"><img src = "images\salad.jpg"/></a>
+				<h4>Kale Caesar Salad</h4>
+				<p>
+					Recipe information...
+				</p>
+			</div>
+		</section>
 	</body>
 </html>
