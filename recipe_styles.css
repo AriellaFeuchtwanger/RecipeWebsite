@@ -84,16 +84,13 @@ iframe {
 #form article, aside, figure, footer, header, nav, section {
 	display: block;
 }
-#form * {
-	margin: 0;
-	padding: 0;
-}
-#form body {
+#form {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 87.5%;
 	width: 700px;
-	height: 300px;
+	height: 500px;
 	margin: 0 auto;
+	padding: 0;
 	border: 3px solid blue;
 }
 #form section {
@@ -101,14 +98,15 @@ iframe {
 }
 #form label {
 	float: left;
-	width: 8em;
-	text-align: right;
+	width: 13em;
+	text-align: left;
+	
 }
 #form label.nofloat {
 	float: none;
 }
 #form input {
-	width: 12em;
+	width: 13em;
 	margin-left: 1em;
 	margin-bottom: .5em;
 }
@@ -116,9 +114,10 @@ iframe {
 	color: red;
 }
 #form h1 {
-	font-size: 150%;
+	font-size: 400%;
 	color: blue;
 	margin-bottom: .7em;
+	text-align: center;
 }
 #form label.error {
 	float: none;
@@ -131,6 +130,4 @@ iframe {
 #form #number {
 	width: 3em;
 }
-#form #name, #email, #email2 {
-	width: 20em;
-}
+

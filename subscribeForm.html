@@ -20,6 +20,10 @@
 		<script>
 			$(document).ready(function() {
 
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
+
 				$("#datepicker").datepicker({
 					changeMonth : true,
 					changeYear : true,
@@ -43,7 +47,7 @@
 						name : {
 							required : true,
 							minlength : 3,
-							maxlength : 30
+							maxlength : 15,
 						},
 						email : {
 							required : true,
@@ -71,7 +75,7 @@
 
 	<body id ="form">
 		<section>
-			<h1>Join our Website</h1>
+			<h1>Join Our Website!</h1>
 			<form id="subscribe_form" name="subscribe_form" action="submit.html" method="get">
 				<label for="name">User Name:</label>
 				<input type="text" id="name" name="name">
@@ -87,7 +91,7 @@
 				<label class="nofloat">
 					<input type="text" id="datepicker">
 				</label>
-				<br>
+
 				<label for="number">Number of times you cook/bake in a week:</label>
 				<input type="text" id="number" name = "number">
 				<br>
