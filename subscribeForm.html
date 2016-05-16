@@ -6,7 +6,7 @@
 		<!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
 		<link href="css/start/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet">
 		<!-- Normal style sheet used for layout and general formatting. -->
-		<link href="subscribeForm.css" type="text/css" rel="stylesheet">
+		<link href="recipe_styles.css" type="text/css" rel="stylesheet">
 		<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
@@ -19,7 +19,6 @@
 		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
 		<script>
 			$(document).ready(function() {
-
 				$("#datepicker").datepicker({
 					yearRange : "-100:+0",
 					maxDate : new Date(),
@@ -28,16 +27,13 @@
 					buttonImageOnly : true,
 					changeMonth : true,
 					changeYear : true,
-
 				});
-
 				// add span element after each input element
 				$(":text").after("<span>*</span>");
 				$("#datepicker").next().text("");
 				$("#number").next().text("");
 				// move focus to first text box
 				$("#name").focus();
-
 				$("#subscribe_form").validate({
 					rules : {
 						name : {
@@ -56,13 +52,11 @@
 						},
 						number : {
 							rangelength : [1, 10],
-
 						}
 					}
-
 				});
+				$("#dialog").dialog({buttons:{OK: function(){$(this).dialog("close")}}});
 				//end validate
-
 			} // end function
 			);
 			// end submit
@@ -70,6 +64,9 @@
 	</head>
 
 	<body>
+		<div id="dialog" title="Join us!">
+			<p>Please fill out the form in order to join! Thanks!</p>
+		</div>
 		<section id = "form">
 			<h1>Join our Website</h1>
 			<form id="subscribe_form" name="subscribe_form" action="submit.html" method="get">

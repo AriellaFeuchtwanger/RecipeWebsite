@@ -13,8 +13,8 @@
 		<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
 		<!-- jQuery UI JavaScript library reference. -->
-		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
 		<script type="text/javascript" src="jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
 		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
 		<script>
 			$(document).ready(function() {
@@ -22,16 +22,16 @@
 					$("#nav-placeholder").replaceWith(data);
 				});
 				$(".bxslider").bxSlider();
+				
 			});
 		</script>
 	</head>
 
 	<body>
 		<div id = "nav-placeholder"></div>
-
 		<section>
 			<iframe width="630" height="472" src="http://www.youtube.com/embed/mSdzs6tLhFQ?autoplay=1" align="middle" ></iframe>
-
+			
 			<aside>
 				<h1>Welcome to the site!</h1>
 				<h3>Here you can find...</h3>
@@ -52,7 +52,8 @@
 			</aside>
 		</section>
 		<ul class="bxslider">
-			<li><img src="images/Cupcake Bouquet.jpg"/>
+			<li>
+				<img src="images/Cupcake Bouquet.jpg"/>
 			</li>
 			<li><img src="images/Frog Cupcakes.jpg"/>
 			</li>
