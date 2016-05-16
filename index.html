@@ -5,6 +5,7 @@
 		<title>We Love Food!</title>
 		<!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
 		<link href="css/start/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet">
+		<link href="jquery.bxslider.css" rel="stylesheet">
 		<!-- Normal style sheet used for layout and general formatting. -->
 		<link href="recipe_styles.css" type="text/css" rel="stylesheet">
 		<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
@@ -12,6 +13,7 @@
 		<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
 		<!-- jQuery UI JavaScript library reference. -->
+		<script type="text/javascript" src="jquery.bxslider.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
 		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
 		<script>
@@ -19,33 +21,49 @@
 				$.get("navigation.html", function(data) {
 					$("#nav-placeholder").replaceWith(data);
 				});
-
+				$(".bxslider").bxSlider();
+				
 			});
 		</script>
 	</head>
 
 	<body>
 		<div id = "nav-placeholder"></div>
+		<section>
+			<iframe width="630" height="472" src="http://www.youtube.com/embed/mSdzs6tLhFQ?autoplay=1" align="middle" ></iframe>
+			
+			<aside>
+				<h1>Welcome to the site!</h1>
+				<h3>Here you can find...</h3>
+				<ul>
+					<li>
+						Recipes
+					</li>
+					<li>
+						Ideas
+					</li>
+					<li>
+						Other Foodies
+					</li>
+					<li>
+						And more!
+					</li>
+				</ul>
+			</aside>
+		</section>
+		<ul class="bxslider">
+			<li>
+				<img src="images/Cupcake Bouquet.jpg"/>
+			</li>
+			<li><img src="images/Frog Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/Pina Colada Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/Strawberry Lemonade Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/smores.jpg"/>
+			</li>
+		</ul>
 
-		<iframe width="630" height="472" src="http://www.youtube.com/embed/mSdzs6tLhFQ?autoplay=1" align="middle" ></iframe>
-
-		<aside>
-			<h1>Welcome to the site!</h1>
-			<h3>Here you can find...</h3>
-			<ul>
-				<li>
-					Recipes
-				</li>
-				<li>
-					Ideas
-				</li>
-				<li>
-					Other Foodies
-				</li>
-				<li>
-					And more!
-				</li>
-			</ul>
-		</aside>
 	</body>
 </html>
