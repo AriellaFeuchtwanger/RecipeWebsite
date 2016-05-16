@@ -9,6 +9,12 @@
 		<script src="jquery-ui-1.8.23.custom.min.js"></script>
 		<script>
 			$(document).ready(function() {
+				$(document).ready(function() {
+					$.get("navigation.html", function(data) {
+						$("#nav-placeholder").replaceWith(data);
+					});
+				});
+				
 				$("#submit h1").animate({
 					backgroundColor : "blue",
 					color : "red"
@@ -22,10 +28,11 @@
 
 			});
 		</script>
-		 
+
 	</head>
 
 	<body bgcolor="#FDDFDF">
+		<div id="nav-placeholder"></div>
 		<section id = "submit">
 			<h1>Congratulations!</h1>
 			<h1>Welcome to our site!</h1>
