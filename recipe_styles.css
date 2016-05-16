@@ -1,4 +1,4 @@
-#submit h1 { 
+#submit h1 {
 	position: relative;
 	font-size: 300%;
 	opacity: .2;
@@ -6,16 +6,16 @@
 	text-align: center;
 }
 
-#submit img{
-	display:block;
+#submit img {
+	display: block;
 	margin: 0 auto;
 }
 
-#submit{
-	background:#FDDFDF;
+#submit {
+	background: #FDDFDF;
 }
 
-nav	{
+nav {
 	margin: 0;
 	text-align: center;
 }
@@ -24,10 +24,9 @@ nav ul {
 	padding: 0;
 	text-align: center;
 }
-nav ul li{
+nav ul li {
 	display: inline-block;
 	list-style-type: none;
-	
 }
 nav ul li a:link, nav ul li a:visited {
 	display: inline-block;
@@ -36,15 +35,15 @@ nav ul li a:link, nav ul li a:visited {
 	background: white;
 	padding: 3px 0 3px 0px;
 	border: solid #929ca4 1px;
-	color:#FF3E96;
+	color: #FF3E96;
 	text-align: center;
 }
 nav ul li a:link, nav ul li a:visited {
 	display: inline-block;
 	width: 110px;
 	margin-bottom: 15px;
-	text-decoration:none;
-}				
+	text-decoration: none;
+}
 nav ul li a:hover {
 	display: inline-block;
 	color: #000;
@@ -56,28 +55,82 @@ body {
 }
 
 img {
-	display:block;
+	display: block;
 	margin: 0 auto;
 }
 
-#food h4{
+#food h4 {
 	text-align: center;
 	font-size: 200%;
 }
 
-#food p{
+#food p {
 	text-align: center;
 	font-size: 150%;
 }
 
-#about h1{
+#about h1 {
 	font-size: 300%;
-	color:#FF3E96;
+	color: #FF3E96;
 }
-aside{
+aside {
 	float: right;
-	color:#FF3E96;
+	color: #FF3E96;
 }
-iframe{
+iframe {
 	margin-left: 350px;
+}
+
+#form article, aside, figure, footer, header, nav, section {
+	display: block;
+}
+#form * {
+	margin: 0;
+	padding: 0;
+}
+#form body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 87.5%;
+	width: 700px;
+	height: 300px;
+	margin: 0 auto;
+	border: 3px solid blue;
+}
+#form section {
+	padding: 0 2em 1em;
+}
+#form label {
+	float: left;
+	width: 8em;
+	text-align: right;
+}
+#form label.nofloat {
+	float: none;
+}
+#form input {
+	width: 12em;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+#form span {
+	color: red;
+}
+#form h1 {
+	font-size: 150%;
+	color: blue;
+	margin-bottom: .7em;
+}
+#form label.error {
+	float: none;
+	color: red;
+	font-size: 80.5%;
+}
+#form #datepicker {
+	margin-right: .5em;
+}
+#form #number {
+	width: 3em;
+}
+#form #name, #email, #email2 {
+	width: 20em;
 }
