@@ -15,28 +15,35 @@
 		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
 		<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
 		<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
-		
+
 		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
 		<script>
 			$(document).ready(function() {
 
 				$("#datepicker").datepicker({
-					minDate : "-100y",
+					yearRange : "-100:+0",
 					maxDate : new Date(),
 					showOn : "button",
 					buttonImage : "images/calendar.jpg",
-					buttonImageOnly : true
+					buttonImageOnly : true,
+					changeMonth : true,
+					changeYear : true,
+
 				});
 
 				// add span element after each input element
 				$(":text").after("<span>*</span>");
+				$("#datepicker").next().text("");
+				$("#number").next().text("");
 				// move focus to first text box
 				$("#name").focus();
 
 				$("#subscribe_form").validate({
 					rules : {
 						name : {
-							required : true
+							required : true,
+							minlength : 3,
+							maxlength : 30
 						},
 						email : {
 							required : true,
@@ -48,33 +55,33 @@
 							equalTo : email
 						},
 						number : {
-							rangelength : [1, 10]
+							rangelength : [1, 10],
+
 						}
-					},
-					messages:{
-						
 					}
-				});//end validate
+
+				});
+				//end validate
 
 			} // end function
 			);
 			// end submit
-
 		</script>
 	</head>
 
 	<body>
-		<section>
+		<section id = "form">
+			<h1>Join our Website</h1>
 			<form id="subscribe_form" name="subscribe_form" action="submit.html" method="get">
-				<h1>Join our Website</h1>
-				<label>User Name:</label>
-				<input type="text" id="name">
+
+				<label for="name">User Name:</label>
+				<input type="text" id="name" name="name">
 				<br>
-				<label>Email:</label>
-				<input type="text" id="email">
+				<label for="email">Email Address:</label>
+				<input type="text" id="email" name="email">
 				<br>
-				<label>Email:</label>
-				<input type="text" id="email2">
+				<label for="email2">Re-enter Email Address:</label>
+				<input type="text" id="email2" name="email2">
 				<br>
 				<br>
 				<label>Date of Birth:</label>
@@ -82,9 +89,12 @@
 					<input type="text" id="datepicker">
 				</label>
 				<br>
-				<label>Number of times you cook/bake in a week:</label>
-				<input type="text" id="number">
-				<br><br>
+				<br>
+
+				<label for="number">Number of times you cook/bake in a week:</label>
+				<input type="text" id="number" name = "number">
+				<br>
+				<br>
 				<label>&nbsp;</label>
 				<input type="submit" id="join" name="join" value="Join our List">
 			</form>
