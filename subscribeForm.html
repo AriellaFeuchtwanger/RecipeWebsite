@@ -57,13 +57,16 @@
 					}
 				});
 				$("#dialog").dialog({
-					buttons : {
-						OK : function() {
-							$(this).dialog("close");
-						}
-					}
+					//buttons : {
+						//OK : function() {
+							//$(this).dialog("close");
+						//}
+					//}
 				});
 				//end validate
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
 			} // end function
 			);
 			// end submit
@@ -76,6 +79,7 @@
 				Please fill out the form in order to join! Thanks!
 			</p>
 		</div>
+		<div id="nav-placeholder"></div>
 		<section >
 			<h1>Join our Website</h1>
 

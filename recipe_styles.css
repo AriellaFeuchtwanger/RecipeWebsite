@@ -95,7 +95,6 @@ iframe {
 	height: 500px;
 	margin: 0 auto;
 	padding: 0;
-	border: 3px solid blue;
 }
 #form section {
 	padding: 0 2em 1em;
@@ -119,7 +118,7 @@ iframe {
 }
 #form h1 {
 	font-size: 400%;
-	color: blue;
+	color: #FF3E96;
 	margin-bottom: .7em;
 	text-align: center;
 }
