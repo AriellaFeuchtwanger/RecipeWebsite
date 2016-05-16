@@ -76,6 +76,8 @@ img {
 aside {
 	float: right;
 	color: #FF3E96;
+	font-size: 125%;
+	margin-right: 2em;
 }
 iframe {
 	margin-left: 350px;
