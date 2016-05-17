@@ -1,10 +1,9 @@
 * {
-
 	color: #FF3E96
 }
 
 a {
-	color: orange;
+	color: white;
 }
 a:hover {
 	color: #ffdd42;
@@ -133,8 +132,11 @@ iframe {
 	margin: 0px;
 	border-color: white;
 }
-#accordion .ui-accordion-header a {
-	color: white;
+#accordion .ui-accordion-content a {
+	color: #FF3E96;
+}
+#accordion .ui-accordion-content a:hover {
+	color: #ffdd42;
 }
 
 #accordion .ui-accordion-content {
@@ -212,10 +214,30 @@ iframe {
 }
 
 #footer {
-	background: white;
-	border: solid #ccffe5 3px;
-	height: 100px;
-	font-size: 100%;
-	text-align: left;
+	background: #FF3E96;
+	border: solid white 3px;
+	color: white;
+}
+
+#footer h1 {
+	font-size: 150%;
+	color: white;
+}
+#footer h4 {
+
+	color: white;
+}
+#footer h3 {
+	font-size: 70%;
+}
+#footer a {
+	color: #D3D3D3;
+}
+#footer a:hover {
+	color: #8C8C8C;
+}
+
+#whoops {
+	font-size: 300%;
 }
 
