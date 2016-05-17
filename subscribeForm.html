@@ -20,6 +20,7 @@
 		<script>
 			$(document).ready(function() {
 
+
 				$("#datepicker").datepicker({
 					yearRange : "-100:+0",
 					maxDate : new Date(),
@@ -64,9 +65,7 @@
 					//}
 				});
 				//end validate
-				$.get("navigation.html", function(data) {
-					$("#nav-placeholder").replaceWith(data);
-				});
+				
 			} // end function
 			);
 			// end submit
