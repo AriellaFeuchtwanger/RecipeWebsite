@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>We Love Food!</title>
+		<!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
+		<link href="css/start/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet">
+		<!-- Normal style sheet used for layout and general formatting. -->
+		<link href="recipe_styles.css" type="text/css" rel="stylesheet">
+		<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<!-- jQuery UI JavaScript library reference. -->
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+		<!-- jQuery call to the autocomplete() method. An array of items is passed in as a parameter. -->
+		<script>
+			$(document).ready(function() {
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
+				$("#accordion").accordion({
+					event : "click",
+					active : false,
+					autoHeight : false
+
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id = "nav-placeholder"></div>
+
+		<section id="faq">
+			<h1>Frequently Asked Questions</h1>
+			<div id="accordion">
+				<h3><a href="#">I made your recipe and it didn’t work. What went wrong?</a></h3>
+				<div>
+					<p>
+						We work very hard to develop the recipes and make every effort to share reliable recipes on our blog.  provide very clear instructions, typically both in the recipe and post. It’s best to read both before beginning! However, sometimes things don’t work out as planned. Please let us know exactly what was unsatisfactory about your result. Oftentimes it is something we can troubleshoot through so you can have better success next time. Trial and error is how we learned, and hopefully you can learn that way too.
+					</p>
+				</div>
+				<h3><a href="#">What are your favorite baking products and kitchen tools?</a></h3>
+				<div>
+					<p>
+						Here's  a list of our favorite brands:
+					</p>
+					<ul>
+						<li>
+							<a href="http://www.crestware.com/">CRESTWARE</a>
+
+						</li>
+						<li>
+							<a href="http://www.farberware.com/">FARBERWARE</a>
+						</li>
+						<li>
+							<a href="https://www.mauvielusa.com/">MAUVIEL</a>
+						</li>
+					</ul>
+				</div>
+				<h3><a href="#">Do you eat everything you bake?</a></h3>
+				<div>
+					<p>
+						Absolutely! We could never share a recipe with you that we wouldn’t personally eat. If we say a recipe is delicious, it is because we think it is delicious! After we’ve had our share, the leftovers are given away.
+						We Love Food!'s purpose is to share our passion to bake and create recipes and is absolutely no reflection of what we eat daily.
+					</p>
+				</div>
+				<h3><a href="#">Many of your recipes call for unsalted butter. Can I use regular salted butter instead?</a></h3>
+				<div>
+					<p>
+						We definitely recommend using unsalted butter in baked goods, because you can control the total amount of salt in the recipe. However, if you do not have unsalted butter and don’t want to make a trip to the store, simply use your salted butter, but omit the salt in the recipe.
+					</p>
+				</div>
+				<h3><a href="#">How do I know if my baking powder and baking soda are still fresh?</a></h3>
+				<div>
+					<p>
+						To test if baking powder is still good, combine 1 teaspoon baking powder with 1/3 cup hot water. If it bubbles, it’s still good! To test baking soda, put 2 tablespoons of white vinegar into a small bowl and add 1 teaspoon of baking soda. If it fizzes immediately, it’s still good!
+					</p>
+				</div>
+				<h3><a href="#">Could you explain the difference between different types of flours – all-purpose, bread, cake, etc. – and how to substitute them?</a></h3>
+				<div>
+					<p>
+						The short answer is that they differ primarily based on protein content, which affects the final texture of the baked good you are making. All-purpose flour has 10-12% protein. Cake flour has 6-8% protein. If you don’t have cake flour, you can substitute ¾ cup sifted all-purpose flour plus 2 tablespoons cornstarch. Bread flour has 12-14% protein; the high protein content causes the bread to rise and gives it shape and structure. Some recipes on this site (bagels, for example) call for high-gluten flour, which has an even higher protein content than bread flour and gives baked goods like bagels its characteristic chewy texture.
+					</p>
+				</div>
+				<h3><a href="#">Can I substitute oil for butter in a recipe? How much should I use?</a></h3>
+				<div>
+					<p>
+						I would always recommend using whatever type of fat is called for in a given recipe because they each have different properties, and butter especially lends a great flavor. Using a liquid oil in place of butter will also affect the final texture of the baked good.
+					</p>
+				</div>
+				<h3><a href="#">Many of your recipes call for unsalted butter. Can I use regular salted butter instead?</a></h3>
+				<div>
+					<p>
+						We definitely recommend using unsalted butter in baked goods, because you can control the total amount of salt in the recipe. However, if you do not have unsalted butter and don’t want to make a trip to the store, simply use your salted butter, but omit the salt in the recipe.
+					</p>
+				</div>
+				<h3><a href="#">Most of us have hectic schedules and every minute counts. How do we find the time to cook? </a></h3>
+				<div>
+					<p>
+						It’s true, we’re way too busy, and working longer and longer hours. But consider that, in the last decade or so, we’ve all found two hours a day to be on line outside of work. So where did we get THAT time? The day is still only 24 hours long. The point is, we always find time for the things we value—and we’ve come to devalue cooking. Our premise is that that was a big mistake—one that was abetted by food corporations and marketers eager to cook for us—and when you realize all that not-cooking is costing us and our families, you’ll be apt to carve out a little more time for it. And when you realize how pleasurable it can be, approached in the right spirit, you might just begin to devote some of your leisure to it. This is what happened to me. By letting corporations cook for us, we have been robbed of one of the greatest satisfactions in life. Let’s take it back!
+					</p>
+				</div>
+				<h3><a href="#">I don’t know how to cook. How can I learn?</a></h3>
+				<div>
+					<p>
+						There are lots of ways to learn to cook so don’t be disheartened if you don’t already know how. One of the best ways is to find a friend, relative, co-worker or neighbor who knows how to cook. Ask that person if you can tag along and be their apprentice of sorts. They will appreciate the help and you’ll learn by watching and assisting. This is an especially good option for those of us who are more visually oriented learners. Online videos are also a great way to learn how to do particular things, like folding bread dough, poaching an egg or canning tomatoes. If you don’t know how to do something, search Youtube. Chances are there’s a video how-to on that very topic.
+					</p>
+				</div><h3><a href="#">How many times do you make a recipe?</a></h3>
+				<div>
+					<p>
+						We feel a big responsibility to providing really good quality recipes for our readers, so one of us always makes a recipe at least twice to make sure we’ve got it just how we want it. The first time we make it, we focus on developing the recipe – flavors, ingredient combinations, cooking time, etc. The second time, we focus on recipe tweaks (like a little more spice, a little less salt) and taking photos. Every once in a while, a recipe takes MANY attempts before being ready to post.
+					</p>
+				</div><h3><a href="#">Can you convert your measurements into grams for those who don’t uses cups/measuring spoons? </a></h3>
+				<div>
+					<p>
+						There are great conversion charts available online, such as this one from <a href="http://dish.allrecipes.com/cup-to-gram-conversions/">All Recipes.</a> Sorry for the inconvenience!
+					</p>
+
+				</div><h3><a href="#">When I am baking, can I just double or triple a recipe, or do I have to make other adjustments?</a></h3>
+				<div>
+					<p>
+						When you double or triple recipes for cakes, muffins, cookies and other baked goods, you should be mathematically precise when you double (or triple) the ingredients, but not the cooking times. When you double the batter, you might split it between two pans, or use a much larger pan: either way the cake(s) will take longer to bake than in the original recipe, but probably not twice as long.
+					</p>
+
+					<p>
+						Our suggestion is this: test the cake at the time called for in your recipe. It won't be done, but check back in 5-minute increments until it is. And don't leave the cake in the oven with the door open when you test it, which will cause your oven temperature to drop. Take the cake out of the oven and immediately close the door while you test the cake.
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>

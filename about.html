@@ -19,18 +19,24 @@
 				$.get("navigation.html", function(data) {
 					$("#nav-placeholder").replaceWith(data);
 				});
+				$("#accordion").accordion({
+					event : "click",
+					active : false,
+					autoHeight : false
+
+				});
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<div id = "nav-placeholder"></div>
 		<section id="about">
-			<h1>About us:</h1>
+			<h1>ABOUT US!</h1>
 			<p>
 				"We Heart Food" began as a collaboration of two foodies from Hicktown, Ohio.
 			</p>
 		</section>
 	</body>
-	
+
 </html>

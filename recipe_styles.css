@@ -69,9 +69,63 @@ img {
 	font-size: 150%;
 }
 
+#food img {
+	width: 200px;
+	height: 500px
+	
+}
+
 #about h1 {
 	font-size: 300%;
 	color: #FF3E96;
+	text-align: center;
+}
+
+#faq section {
+	padding: 15px 25px;
+}
+#faq h1 {
+	font-size: 300%;
+	color: #FF3E96;
+	text-align: center;
+}
+#accordion {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#accordion .ui-accordion {
+	background-color: #FDDFDF;
+	margin: 50px auto;
+}
+
+#accordion .ui-accordion-header {
+	background-color: #FF3E96;
+	color: white;
+	background-image: none;
+	margin: 0px;
+	border-color: white;
+}
+#accordion .ui-accordion-header a {
+	color: white;
+}
+
+#accordion .ui-accordion-content {
+	width: 90%;
+	background-image: none;
+	background-color: #FDDFDF;
+	color: #FF3E96;
+	border-color: #FDDFDF;
+	font-size: 12pt;
+	line-height: 16pt;
+	line-height: 16pt;
+	margin: 0;
+}
+#accordion a {
+	color: orange;
+}
+#accordion a:hover {
+	color: #ffdd42;
 }
 aside {
 	float: right;
