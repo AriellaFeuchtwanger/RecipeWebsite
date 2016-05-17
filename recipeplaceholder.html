@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>We Love Food!</title>
+		<link href="css/start/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="recipe_styles.css">
+		<link rel="stylesheet" href="placeholder.css">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+		<script>
+			$(document).ready(function() {
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
+				var docs = document.getElementById("img");
+				docs.setAttribute("src", "images/whoops.gif");
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="nav-placeholder"></div>
+		<h1>Whoops!</h1>
+		<img id="img" src="#"/>
+		<h2>Something went wrong! Check out our <a href="faqs.html">FAQ page</a> if you have any questions!</h2>
+	</body>
+</html>
