@@ -37,7 +37,19 @@
 				$("#name").focus();
 				$("#subscribe_form").validate({
 					rules : {
-						name : {
+						firstName : {
+							required : true,
+							minlength : 3,
+							maxlength : 15,
+							lettersonly: true
+						},
+						lastName : {
+							required : true,
+							minlength : 3,
+							maxlength : 15,
+							lettersonly: true
+						},
+						userName : {
 							required : true,
 							minlength : 3,
 							maxlength : 15,
@@ -53,6 +65,7 @@
 						},
 						number : {
 							rangelength : [1, 10],
+							digits : true
 						}
 					}
 				});
@@ -81,12 +94,17 @@
 		</div>
 		<div id="nav-placeholder"></div>
 		<section >
-			<h1>Join our Website</h1>
+			<h1>* Join our Site *</h1>
 
 			<form id="subscribe_form" name="subscribe_form" action="submit.html" method="get">
-
-				<label for="name">User Name:</label>
-				<input type="text" id="name" name="name">
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName">
+				<br>
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName">
+				<br>
+				<label for="userName">User Name:</label>
+				<input type="text" id="userName" name="userName">
 				<br>
 				<label for="email">Email Address:</label>
 				<input type="text" id="email" name="email">
