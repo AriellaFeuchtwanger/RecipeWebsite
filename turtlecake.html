@@ -13,6 +13,9 @@
 				$.get("navigation.html", function(data) {
 					$("#nav-placeholder").replaceWith(data);
 				});
+				$.get("footer.html", function(data) {
+					$("#nav-placeholder-footer").replaceWith(data);
+				});
 			});
 		</script>
 	</head>
@@ -162,5 +165,6 @@
 				<h3>Enjoy!</h3>
 			</ol>
 		</div>
+		<div id = "nav-placeholder-footer"></div>
 	</body>
 </html>

@@ -19,19 +19,22 @@
 		<script>
 			$(document).ready(function() {
 				$.get("navigation.html", function(data) {
-					$("#nav-placeholder").replaceWith(data);
+					$("#nav-placeholder-header").replaceWith(data);
+				});
+				$.get("footer.html", function(data) {
+					$("#nav-placeholder-footer").replaceWith(data);
 				});
 				$(".bxslider").bxSlider();
-				
+
 			});
 		</script>
 	</head>
 
 	<body>
-		<div id = "nav-placeholder"></div>
+		<div id = "nav-placeholder-header"></div>
 		<section>
 			<iframe width="630" height="472" src="http://www.youtube.com/embed/mSdzs6tLhFQ?autoplay=1" align="middle" ></iframe>
-			
+
 			<aside>
 				<h1>Welcome to the site!</h1>
 				<h3>Here you can find...</h3>
@@ -64,6 +67,6 @@
 			<li><img src="images/smores.jpg"/>
 			</li>
 		</ul>
-
+		<div id = "nav-placeholder-footer"></div>
 	</body>
 </html>

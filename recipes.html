@@ -13,6 +13,9 @@
 				$.get("navigation.html", function(data) {
 					$("#nav-placeholder").replaceWith(data);
 				});
+				$.get("footer.html", function(data) {
+					$("#nav-placeholder-footer").replaceWith(data);
+				});
 			});
 		</script>
 	</head>
@@ -23,26 +26,27 @@
 			<div class ="dessert">
 				<a href="#"><img src = "images\cake.jpg"/></a>
 				<a href="recipeplaceholder.html"><h4>Turtle Cake</h4></a>
-				
+
 			</div>
 
 			<div class ="appetizer">
 				<a href="#"><img src = "images\soup.jpg"/></a>
 				<a href="recipeplaceholder.html"><h4>Soup</h4></a>
-				
+
 			</div>
 
 			<div class ="main">
 				<a href="#"><img src = "images\meat.jpg"/></a>
 				<a href="recipeplaceholder.html"><h4>Slow Cooker Beef Barbacoa</h4></a>
-				
+
 			</div>
 
 			<div class ="side">
 				<a href="#"><img src = "images\salad.jpg"/></a>
 				<a href="recipeplaceholder.html"><h4>Kale Caesar Salad</h4></a>
-				
+
 			</div>
 		</section>
+		<div id = "nav-placeholder-footer"></div>
 	</body>
 </html>
