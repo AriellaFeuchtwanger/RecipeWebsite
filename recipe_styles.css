@@ -6,6 +6,14 @@
 	text-align: center;
 }
 
+* {
+
+	color: #FF3E96
+}
+h1 {
+	text-align: center;
+}
+
 #submit img {
 	display: block;
 	margin: 0 auto;
@@ -35,7 +43,6 @@ nav ul li a:link, nav ul li a:visited {
 	background: white;
 	padding: 3px 0 3px 0px;
 	border: solid #929ca4 1px;
-	color: #FF3E96;
 	text-align: center;
 }
 nav ul li a:link, nav ul li a:visited {
@@ -76,7 +83,6 @@ img {
 
 #about h1 {
 	font-size: 300%;
-	color: #FF3E96;
 	text-align: center;
 }
 
@@ -85,7 +91,6 @@ img {
 }
 #faq h1 {
 	font-size: 300%;
-	color: #FF3E96;
 	text-align: center;
 }
 #faq a {
@@ -119,7 +124,6 @@ img {
 	width: 90%;
 	background-image: none;
 	background-color: #FDDFDF;
-	color: #FF3E96;
 	border-color: #FDDFDF;
 	font-size: 12pt;
 	line-height: 16pt;
@@ -129,7 +133,6 @@ img {
 
 aside {
 	float: right;
-	color: #FF3E96;
 	font-size: 125%;
 	margin-right: 2em;
 }
@@ -183,11 +186,22 @@ iframe {
 	font-size: 80.5%;
 }
 
-#form #datepicker {
+#form datepicker {
 	width: 6.5em;
 	display: inline-block;
 }
 
-#form #number {
+#form number {
 	width: 3em;
+}
+#about {
+	text-align: center;
+}
+#about h4{
+	font-size: 200%;
+}
+#about img {
+	width: 150px;
+	height: 150px;
+	border: 4px solid #FF3E96;
 }
