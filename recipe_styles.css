@@ -1,26 +1,26 @@
-#submit h1 {
-	position: relative;
-	font-size: 300%;
-	opacity: .2;
-	color: blue;
-	text-align: center;
-}
-
 * {
 
 	color: #FF3E96
 }
+
+a {
+	color: orange;
+}
+a:hover {
+	color: #ffdd42;
+}
+
 h1 {
 	text-align: center;
 }
 
-#submit img {
-	display: block;
-	margin: 0 auto;
+body {
+	background-color: #FFDDDD;
 }
 
-#submit {
-	background: #FDDFDF;
+img {
+	display: block;
+	margin: 0 auto;
 }
 
 nav {
@@ -45,25 +45,47 @@ nav ul li a:link, nav ul li a:visited {
 	border: solid #929ca4 1px;
 	text-align: center;
 }
-nav ul li a:link, nav ul li a:visited {
+
+aside {
+	float: right;
+	font-size: 125%;
+	margin-right: 2em;
+}
+iframe {
+	margin-left: 350px;
+}
+.bxslider {
+	background-color: #FF3E96;
+}
+
+#submit h1 {
+	position: relative;
+	font-size: 300%;
+	opacity: .2;
+	color: blue;
+	text-align: center;
+}
+
+#submit img {
+	display: block;
+	margin: 0 auto;
+}
+
+#submit {
+	background: #FDDFDF;
+}
+
+#menu_list a {
 	display: inline-block;
 	width: 110px;
 	margin-bottom: 15px;
 	text-decoration: none;
+	color: #FF3E96;
 }
-nav ul li a:hover {
+#menu_list a:hover {
 	display: inline-block;
-	color: #000;
-	background-color: #ccc;
-}
-
-body {
-	background-color: #FFDDDD;
-}
-
-img {
-	display: block;
-	margin: 0 auto;
+	color: white;
+	background-color: #FF3E96;
 }
 
 #food h4 {
@@ -93,12 +115,7 @@ img {
 	font-size: 300%;
 	text-align: center;
 }
-#faq a {
-	color: orange;
-}
-#faq a:hover {
-	color: #ffdd42;
-}
+
 #accordion {
 	width: 600px;
 	margin-left: auto;
@@ -129,18 +146,6 @@ img {
 	line-height: 16pt;
 	line-height: 16pt;
 	margin: 0;
-}
-
-aside {
-	float: right;
-	font-size: 125%;
-	margin-right: 2em;
-}
-iframe {
-	margin-left: 350px;
-}
-.bxslider {
-	background-color: #FF3E96;
 }
 
 #form article, aside, figure, footer, header, nav, section {
@@ -197,7 +202,7 @@ iframe {
 #about {
 	text-align: center;
 }
-#about h4{
+#about h4 {
 	font-size: 200%;
 }
 #about img {
@@ -205,3 +210,10 @@ iframe {
 	height: 150px;
 	border: 4px solid #FF3E96;
 }
+
+#footer {
+	background: white;
+	border: solid #ccffe5 3px;
+	height: 100px;
+}
+

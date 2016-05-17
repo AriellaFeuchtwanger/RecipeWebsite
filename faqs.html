@@ -19,6 +19,9 @@
 				$.get("navigation.html", function(data) {
 					$("#nav-placeholder").replaceWith(data);
 				});
+				$.get("footer.html", function(data) {
+					$("#nav-placeholder-footer").replaceWith(data);
+				});
 				$("#accordion").accordion({
 					event : "click",
 					active : false,
@@ -126,9 +129,10 @@
 					</p>
 				</div>
 			</div>
-			
+
 			<h1>Feel free to <a href="mailto:info@welovefood.com?Subject=Hello%20again" target="_top">email us</a> with any more Questions!!!</h1>
 		</section>
+		<div id = "nav-placeholder-footer"></div>
 	</body>
 
 </html>

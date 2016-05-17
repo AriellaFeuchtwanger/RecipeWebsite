@@ -13,6 +13,9 @@
 					$.get("navigation.html", function(data) {
 						$("#nav-placeholder").replaceWith(data);
 					});
+					$.get("footer.html", function(data) {
+						$("#nav-placeholder-footer").replaceWith(data);
+					});
 				});
 
 				$("#submit h1").animate({
