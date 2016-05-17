@@ -215,5 +215,7 @@ iframe {
 	background: white;
 	border: solid #ccffe5 3px;
 	height: 100px;
+	font-size: 100%;
+	text-align: left;
 }
 
