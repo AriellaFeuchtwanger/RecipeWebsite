@@ -13,12 +13,13 @@
 		<script type="text/javascript" src="jquery.bxslider.min.js"></script>
 		<script>
 			$(document).ready(function() {
+				var docs = document.getElementById("img");
+				docs.setAttribute("src", "images/whoops.gif");
 				$(".bxslider").bxSlider();
-
 			});
 		</script>
 	</head>
-	<body>
+	<body id="mobile">
 		<!--Home-->
 		<div data-role="page" id="home">
 			<header data-role="header">
@@ -26,13 +27,13 @@
 				<div data-role="navbar">
 					<ul>
 						<li>
-							<a href="#home" data-icon="home" data-theme="b">Home</a>
+							<a href="#home" data-icon="home" class="ui-btn-active">Home</a>
 						</li>
 						<li>
-							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+							<a href="#recipes" data-icon="grid" >Recipes</a>
 						</li>
 						<li>
-							<a href="#join" data-icon="user" data-theme="b">Join</a>
+							<a href="#join" data-icon="user">Join</a>
 						</li>
 						<li>
 							<a href="#about" data-icon="info">About</a>
@@ -61,41 +62,42 @@
 						And more!
 					</li>
 				</ul>
-				
+
 				<ul class="bxslider">
-			<li>
-				<img src="images/Cupcake Bouquet.jpg"/>
-			</li>
-			<li><img src="images/Frog Cupcakes.jpg"/>
-			</li>
-			<li><img src="images/Pina Colada Cupcakes.jpg"/>
-			</li>
-			<li><img src="images/Strawberry Lemonade Cupcakes.jpg"/>
-			</li>
-			<li><img src="images/smores.jpg"/>
-			</li>
-		</ul>
+					<li>
+						<img src="images/Cupcake Bouquet.jpg"/>
+					</li>
+					<li><img src="images/Frog Cupcakes.jpg"/>
+					</li>
+					<li><img src="images/Pina Colada Cupcakes.jpg"/>
+					</li>
+					<li><img src="images/Strawberry Lemonade Cupcakes.jpg"/>
+					</li>
+					<li><img src="images/smores.jpg"/>
+					</li>
+				</ul>
 			</section>
 
 			<footer data-role="footer">
 				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
 				<h1><a href="index.html">Back to web page</a></h1>
 			</footer>
-			
-			<!--Recipes-->
-			<div data-role="page" id=>
+		</div>
+
+		<!--Recipes-->
+		<div data-role="page" id="recipes">
 			<header data-role="header">
 				<img src="images/Mobile We Heart Food!.jpg" />
 				<div data-role="navbar">
 					<ul>
 						<li>
-							<a href="#home" data-icon="home" data-theme="b">Home</a>
+							<a href="#home" data-icon="home">Home</a>
 						</li>
 						<li>
-							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+							<a href="#recipes" data-icon="grid"  class="ui-btn-active">Recipes</a>
 						</li>
 						<li>
-							<a href="#join" data-icon="user" data-theme="b">Join</a>
+							<a href="#join" data-icon="user">Join</a>
 						</li>
 						<li>
 							<a href="#about" data-icon="info">About</a>
@@ -108,38 +110,39 @@
 			</header>
 
 			<section data-role="content">
-				<a href="#"><img src = "images\cake.jpg"/></a>
+				<a href="#"><img src = "images\Mobile Cake.jpg"/></a>
 				<a href="#placeholder"><h4>Turtle Cake</h4></a>
 
-				<a href="#"><img src = "images\soup.jpg"/></a>
-				<a href="recipeplaceholder.html"><h4>Soup</h4></a>
+				<a href="#"><img src = "images\Mobile Soup.jpg"/></a>
+				<a href="#placeholder"><h4>Soup</h4></a>
 
-				<a href="#"><img src = "images\meat.jpg"/></a>
-				<a href="recipeplaceholder.html"><h4>Slow Cooker Beef Barbacoa</h4></a>
+				<a href="#"><img src = "images\Mobile Meat.jpg"/></a>
+				<a href="#placeholder"><h4>Slow Cooker Beef Barbacoa</h4></a>
 
-				<a href="#"><img src = "images\salad.jpg"/></a>
-				<a href="recipeplaceholder.html"><h4>Kale Caesar Salad</h4></a>
+				<a href="#"><img src = "images\Mobile Salad.jpg"/></a>
+				<a href="#placeholder"><h4>Kale Caesar Salad</h4></a>
 			</section>
 
 			<footer data-role="footer">
 				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
 				<h1><a href="index.html">Back to web page</a></h1>
 			</footer>
-			
-			<!--Join-->
-			<div data-role="page" id=>
+		</div>
+
+		<!--Join-->
+		<div data-role="page" id="join">
 			<header data-role="header">
 				<img src="images/Mobile We Heart Food!.jpg" />
 				<div data-role="navbar">
 					<ul>
 						<li>
-							<a href="#home" data-icon="home" data-theme="b">Home</a>
+							<a href="#home" data-icon="home" >Home</a>
 						</li>
 						<li>
-							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+							<a href="#recipes" data-icon="grid" >Recipes</a>
 						</li>
 						<li>
-							<a href="#join" data-icon="user" data-theme="b">Join</a>
+							<a href="#join" data-icon="user" class="ui-btn-active">Join</a>
 						</li>
 						<li>
 							<a href="#about" data-icon="info">About</a>
@@ -152,28 +155,158 @@
 			</header>
 
 			<section data-role="content">
-				
+
 			</section>
 
 			<footer data-role="footer">
 				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
 				<h1><a href="index.html">Back to web page</a></h1>
 			</footer>
-			
-			<!--About-->
-			<div data-role="page" id=>
+		</div>
+
+		<!--About-->
+		<div data-role="page" id="about">
 			<header data-role="header">
 				<img src="images/Mobile We Heart Food!.jpg" />
 				<div data-role="navbar">
 					<ul>
 						<li>
-							<a href="#home" data-icon="home" data-theme="b">Home</a>
+							<a href="#home" data-icon="home">Home</a>
 						</li>
 						<li>
-							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+							<a href="#recipes" data-icon="grid" >Recipes</a>
 						</li>
 						<li>
-							<a href="#join" data-icon="user" data-theme="b">Join</a>
+							<a href="#join" data-icon="user">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info" class="ui-btn-active">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
+				<h1>* ABOUT US! *</h1>
+				<div class ="girl1">
+					<img src = "images\girl1.jpg"/>
+					<h4>Sara</h4>
+				</div>
+				<div class ="girl2">
+					<img src = "images\girl2.jpg"/>
+					<h4>Jessica</h4>
+				</div>
+
+				<p>
+					"We Heart Food" began as a collaboration of two foodies from Hicktown, Ohio.
+				</p>
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+		</div>
+
+		<!--FAQs-->
+		<div data-role="page" id="faqs">
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" >Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets" class="ui-btn-active">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3><a href="#">I made your recipe and it didn’t work. What went wrong?</a></h3>
+					<div>
+						<p>
+							We work very hard to develop the recipes and make every effort to share reliable recipes on our blog. We also provide very precise instructions. However, sometimes things don’t work out as planned. Please let us know exactly what was unsatisfactory about your result. Oftentimes it is something we can troubleshoot through so you can have better success next time. Trial and error is how we learned, and hopefully you can learn that way too.
+						</p>
+					</div>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3><a href="#">What are your favorite baking products and kitchen tools?</a></h3>
+					<div>
+						<p>
+							Here's  a list of our favorite brands:
+						</p>
+						<ul>
+							<li>
+								<a href="http://www.crestware.com/">CRESTWARE</a>
+
+							</li>
+							<li>
+								<a href="http://www.farberware.com/">FARBERWARE</a>
+							</li>
+							<li>
+								<a href="https://www.mauvielusa.com/">MAUVIEL</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3><a href="#">Do you eat everything you bake?</a></h3>
+					<div>
+						<p>
+							Absolutely! We could never share a recipe with you that we wouldn’t personally eat. If we say a recipe is delicious, it is because we think it is delicious! After we’ve had our share, the leftovers are given away.
+							We Love Food!'s purpose is to share our passion to bake and create recipes and is absolutely no reflection of what we eat daily.
+						</p>
+					</div>
+				</div>
+
+				<div data-role="collapsible" data-collapsed="true">
+					<h3><a href="#">Most of us have hectic schedules and every minute counts. How do we find the time to cook? </a></h3>
+					<div>
+						<p>
+							It’s true, we’re way too busy, and working longer and longer hours. But consider that, in the last decade or so, we’ve all found two hours a day to be on line outside of work. So where did we get THAT time? The day is still only 24 hours long. The point is, we always find time for the things we value—and we’ve come to devalue cooking. Our premise is that that was a big mistake—one that was abetted by food corporations and marketers eager to cook for us—and when you realize all that not-cooking is costing us and our families, you’ll be apt to carve out a little more time for it. And when you realize how pleasurable it can be, approached in the right spirit, you might just begin to devote some of your leisure to it. This is what happened to me. By letting corporations cook for us, we have been robbed of one of the greatest satisfactions in life. Let’s take it back!
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+		</div>
+
+		<div data-role="page" id="placeholder">
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" >Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user">Join</a>
 						</li>
 						<li>
 							<a href="#about" data-icon="info">About</a>
@@ -186,41 +319,9 @@
 			</header>
 
 			<section data-role="content">
-				
-			</section>
-
-			<footer data-role="footer">
-				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
-				<h1><a href="index.html">Back to web page</a></h1>
-			</footer>
-			
-			<!--FAQs-->
-			<div data-role="page" id=>
-			<header data-role="header">
-				<img src="images/Mobile We Heart Food!.jpg" />
-				<div data-role="navbar">
-					<ul>
-						<li>
-							<a href="#home" data-icon="home" data-theme="b">Home</a>
-						</li>
-						<li>
-							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
-						</li>
-						<li>
-							<a href="#join" data-icon="user" data-theme="b">Join</a>
-						</li>
-						<li>
-							<a href="#about" data-icon="info">About</a>
-						</li>
-						<li>
-							<a href="#faqs" data-icon="bullets">FAQs</a>
-						</li>
-					</ul>
-				</div>
-			</header>
-
-			<section data-role="content">
-				
+				<h1 id = "whoops">Whoops!</h1>
+				<img id="img" src="#"/>
+				<h2>Something went wrong! Check out our <a href="#faqs">FAQ page</a> if you have any questions!</h2>
 			</section>
 
 			<footer data-role="footer">

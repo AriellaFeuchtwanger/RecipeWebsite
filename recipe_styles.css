@@ -46,13 +46,11 @@ nav ul li a:link, nav ul li a:visited {
 }
 
 aside {
-	float: right;
+	float: left;
 	font-size: 125%;
 	margin-right: 2em;
 }
-iframe {
-	margin-left: 350px;
-}
+
 .bxslider {
 	background-color: #FF3E96;
 }
@@ -240,4 +238,6 @@ iframe {
 #whoops {
 	font-size: 300%;
 }
-
+#mobile{
+	align: center;
+}
