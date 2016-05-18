@@ -20,6 +20,12 @@
 		<script>
 			$(document).ready(function() {
 
+				$.get("navigation.html", function(data) {
+					$("#nav-placeholder").replaceWith(data);
+				});
+				$.get("footer.html", function(data) {
+					$("#nav-placeholder-footer").replaceWith(data);
+				});
 
 				$("#datepicker").datepicker({
 					yearRange : "-100:+0",
@@ -42,13 +48,13 @@
 							required : true,
 							minlength : 3,
 							maxlength : 15,
-							lettersonly: true
+							lettersonly : true
 						},
 						lastName : {
 							required : true,
 							minlength : 3,
 							maxlength : 15,
-							lettersonly: true
+							lettersonly : true
 						},
 						userName : {
 							required : true,
@@ -78,7 +84,7 @@
 					//}
 				});
 				//end validate
-				
+
 			} // end function
 			);
 			// end submit
@@ -87,6 +93,7 @@
 
 	<body id = "form">
 		<a name="top"></a>
+		<div id="nav-placeholder"></div>
 		<div id="dialog" title="Join us!">
 			<p>
 				Please fill out the form in order to join! Thanks!
@@ -125,6 +132,6 @@
 				<input type="submit" id="join" name="join" value="Join our List">
 			</form>
 		</section>
-		
+		<div id = "nav-placeholder-footer"></div>
 	</body>
 </html>
