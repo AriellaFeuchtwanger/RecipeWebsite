@@ -1,0 +1,69 @@
+footer h4 {
+	margin-right: 150px;
+	color: white;
+	font-size: 70%;
+}
+footer h3 {
+	color: white;
+	font-size: 40%;
+}
+
+footer a {
+	color: #D3D3D3;
+}
+footer a:hover {
+	color: #8C8C8C;
+}
+
+footer p {
+	color: white;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+footer h1 {
+	color: white;
+	font-size: 50%;
+}
+
+h1 {
+	color: #FF3E96;
+	text-align: center;
+}
+
+h3 {
+	color: #FF3E96;
+	text-align: center;
+}
+
+ul {
+	color: #FF3E96;
+}
+
+p {
+	color: #FF3E96;
+	text-align: center;
+}
+
+h4 {
+	color: #FF3E96;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+#about img {
+	border: 4px solid #FF3E96;
+}
+
+h2 {
+	color: #FF3E96;
+	text-align: center;
+}
+
+#food a {
+	color: #FF3E96;
+}
