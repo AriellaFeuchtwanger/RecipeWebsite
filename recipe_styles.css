@@ -2,13 +2,9 @@
 	color: #FF3E96
 }
 
-a {
-	color: white;
-}
 a:hover {
-	color: #ffdd42;
+	color: #8C8C8C;
 }
-
 h1 {
 	text-align: center;
 }
@@ -139,7 +135,7 @@ aside {
 	color: #FF3E96;
 }
 #accordion .ui-accordion-content a:hover {
-	color: #ffdd42;
+	color: #8C8C8C;
 }
 
 #accordion .ui-accordion-content {
@@ -237,12 +233,14 @@ aside {
 #footer h3 {
 	font-size: 70%;
 }
+
 #footer a {
 	color: #D3D3D3;
 }
 #footer a:hover {
 	color: #8C8C8C;
 }
+
 #footer p {
 	color: white;
 	margin-left: 400px;
