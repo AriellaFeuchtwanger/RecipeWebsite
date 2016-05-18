@@ -6,35 +6,226 @@
 		<title>We Love Food!</title>
 		<link rel="stylesheet" href="css/themes/welovefood.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link href="jquery.bxslider.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="jquery.bxslider.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".bxslider").bxSlider();
+
+			});
+		</script>
 	</head>
 	<body>
-		<div data-role="page">
+		<!--Home-->
+		<div data-role="page" id="home">
 			<header data-role="header">
-				<h1>Buttons</h1>
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home" data-theme="b">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user" data-theme="b">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
 			</header>
 
 			<section data-role="content">
-				<!-- INLINE BUTTONS -->
-				<a href="#" data-role="button" data-inline="true">Cancel</a>
-				<a href="#" data-role="button" data-inline="true">OK</a>
-				<!-- BUTTONS ICONS -->
-				<a href="#" data-role="button" data-icon="delete">Delete</a>
-				<a href="#" data-role="button" data-icon="home">Home</a>
-				<!-- GROUPED BUTTONS -->
-				<div data-role="controlgroup" data-type="horizontal">
-					<a href="#" data-role="button">Yes</a>
-					<a href="#" data-role="button">No</a>
-					<a href="#" data-role="button">Maybe</a>
-				</div>
-				<!-- BACK BUTTON -->
-				<a href="#" data-role="button" data-rel="back" data-icon="back">Back to previous page</a>
+				<h1>Welcome to We Love Food!</h1>
+				<h3>Here you can find...</h3>
+				<ul>
+					<li>
+						Recipes
+					</li>
+					<li>
+						Ideas
+					</li>
+					<li>
+						Other Foodies
+					</li>
+					<li>
+						And more!
+					</li>
+				</ul>
+				
+				<ul class="bxslider">
+			<li>
+				<img src="images/Cupcake Bouquet.jpg"/>
+			</li>
+			<li><img src="images/Frog Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/Pina Colada Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/Strawberry Lemonade Cupcakes.jpg"/>
+			</li>
+			<li><img src="images/smores.jpg"/>
+			</li>
+		</ul>
 			</section>
 
 			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+			
+			<!--Recipes-->
+			<div data-role="page" id=>
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home" data-theme="b">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user" data-theme="b">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
+				<a href="#"><img src = "images\cake.jpg"/></a>
+				<a href="#placeholder"><h4>Turtle Cake</h4></a>
+
+				<a href="#"><img src = "images\soup.jpg"/></a>
+				<a href="recipeplaceholder.html"><h4>Soup</h4></a>
+
+				<a href="#"><img src = "images\meat.jpg"/></a>
+				<a href="recipeplaceholder.html"><h4>Slow Cooker Beef Barbacoa</h4></a>
+
+				<a href="#"><img src = "images\salad.jpg"/></a>
+				<a href="recipeplaceholder.html"><h4>Kale Caesar Salad</h4></a>
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+			
+			<!--Join-->
+			<div data-role="page" id=>
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home" data-theme="b">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user" data-theme="b">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
 				
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+			
+			<!--About-->
+			<div data-role="page" id=>
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home" data-theme="b">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user" data-theme="b">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
+				
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
+			</footer>
+			
+			<!--FAQs-->
+			<div data-role="page" id=>
+			<header data-role="header">
+				<img src="images/Mobile We Heart Food!.jpg" />
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" data-icon="home" data-theme="b">Home</a>
+						</li>
+						<li>
+							<a href="#recipes" data-icon="grid" class="ui-btn-active" data-theme="b">Recipes</a>
+						</li>
+						<li>
+							<a href="#join" data-icon="user" data-theme="b">Join</a>
+						</li>
+						<li>
+							<a href="#about" data-icon="info">About</a>
+						</li>
+						<li>
+							<a href="#faqs" data-icon="bullets">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<section data-role="content">
+				
+			</section>
+
+			<footer data-role="footer">
+				<h1><a href="subscribeForm.html">Subscribe</a> if you LOVE food!!!!</h1>
+				<h1><a href="index.html">Back to web page</a></h1>
 			</footer>
 		</div>
 	</body>
