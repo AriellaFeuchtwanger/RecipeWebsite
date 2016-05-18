@@ -24,7 +24,9 @@
 				$.get("footer.html", function(data) {
 					$("#nav-placeholder-footer").replaceWith(data);
 				});
-				$(".bxslider").bxSlider();
+				$(".bxslider").bxSlider({
+					slideWidth : 600
+				});
 
 			});
 		</script>
@@ -34,9 +36,28 @@
 		<a name="top"></a>
 		<div id = "nav-placeholder-header"></div>
 		<section>
+			<aside>
+				<h1>Welcome to the site!</h1>
+				<h3>Here you can find...</h3>
+				<div align="left">
+					<ul>
+						<li>
+							Recipes
+						</li>
+						<li>
+							Ideas
+						</li>
+						<li>
+							Other Foodies
+						</li>
+						<li>
+							And more!
+						</li>
+					</ul>
+				</div>
+			</aside>
 			<ul class="bxslider">
-				<li>
-					<img src="images/Cupcake Bouquet.jpg"/>
+				<li><img src="images/Cupcake Bouquet.jpg"/>
 				</li>
 				<li><img src="images/Frog Cupcakes.jpg"/>
 				</li>
@@ -47,30 +68,38 @@
 				<li><img src="images/smores.jpg"/>
 				</li>
 			</ul>
-			<div align="center">
-				<aside>
-					<h1>Welcome to the site!</h1>
-					<h3>Here you can find...</h3>
-					<div align="left">
-						<ul>
-							<li>
-								Recipes
-							</li>
-							<li>
-								Ideas
-							</li>
-							<li>
-								Other Foodies
-							</li>
-							<li>
-								And more!
-							</li>
-						</ul>
-					</div>
-				</aside>
-				<iframe width="630" height="472" src="http://www.youtube.com/embed/mSdzs6tLhFQ?autoplay=1" align="middle" ></iframe>
+			<ul class="bxslider">
 
-			</div>
+				<li><img src="images/pasta.jpg"/>
+				</li>
+				<li><img src="images/pizza.jpg"/>
+				</li>
+				<li><img src="images/fish.jpg"/>
+				</li>
+				<li><img src="images/chicken.jpg"/>
+				</li>
+				<li><img src="images/steak.jpg"/>
+				</li>
+
+			</ul>
+
+			<ul class="bxslider">
+				<li>
+					<iframe width="500" height="472" align = "center" src="http://www.youtube.com/embed/mSdzs6tLhFQ?" align="middle" ></iframe>
+				</li>
+				<li>
+					<iframe width="500" height="472" src="http://www.youtube.com/embed/ZJy1ajvMU1k?" align="middle" ></iframe>
+				</li>
+				<li>
+					<iframe width="500" height="472" src="http://www.youtube.com/embed/2DWCzrH8Zp8?" align="middle" ></iframe>
+				</li>
+				<li>
+					<iframe width="500" height="472" src="http://www.youtube.com/embed/sbcULAryUoU?" align="middle" ></iframe>
+				</li>
+				<li>
+					<iframe width="500" height="472" src="http://www.youtube.com/embed/1c9ex1NmALg?" align="middle" ></iframe>
+				</li>
+			</ul>
 
 		</section>
 		<div id = "nav-placeholder-footer"></div>
