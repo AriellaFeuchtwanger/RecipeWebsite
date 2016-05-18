@@ -201,6 +201,8 @@ aside {
 }
 #about {
 	text-align: center;
+	margin-left: 450px;
+	margin-right: 450px;
 }
 #about h4 {
 	font-size: 200%;
@@ -233,6 +235,11 @@ aside {
 }
 #footer a:hover {
 	color: #8C8C8C;
+}
+#footer p {
+	color: white;
+	margin-left: 400px;
+	margin-right: 400px;
 }
 
 #whoops {
