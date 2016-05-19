@@ -202,8 +202,12 @@ aside {
 }
 #about {
 	text-align: center;
-	margin-left: 450px;
-	margin-right: 450px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#about p {
+	font-size: 150%;
 }
 #about h4 {
 	font-size: 200%;
@@ -223,15 +227,16 @@ aside {
 #footer h1 {
 	font-size: 100%;
 	color: white;
-	margin-left: 150px;
+	text-align: center;
 }
 #footer h4 {
-	margin-right: 150px;
 	color: white;
 	font-size: 100%;
+	text-align: center;
 }
 #footer h3 {
 	font-size: 70%;
+	text-align: center;
 }
 
 #footer a {
@@ -243,8 +248,8 @@ aside {
 
 #footer p {
 	color: white;
-	margin-left: 400px;
-	margin-right: 400px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 #whoops {
